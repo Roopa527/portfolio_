@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: #444;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+.bg-light {
+    background-color: #f4f4f4;
+}
+
+.bg-dark {
+    background-color: #333;
+    color: white;
+}
+
+.bg-dark .hover-text span {
+    color: #f4f4f4;
+}
+
+.hover-text span {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.hover-text span:hover {
+    color: #007BFF;
+}
+.about-content{
+    display:flex;
+    align-items:center;
+}
+.profile-pic{
+    width:350px;
+    height:250px;
+    margin-left:450px;
+
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery-item {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.featured-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.featured-item img {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.featured-text {
+    max-width: 600px;
+}
+
+.featured-text h3:hover {
+    color: #007BFF;
+}
+
+.featured-text h3 {
+    margin-top: 0;
+    transition: color 0.3s ease;
+}
+
+.testimonial {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.bg-dark .testimonial {
+    border-color: #555;
+    background-color: #444;
+}
+
+.testimonial .author {
+    text-align: right;
+    font-style: italic;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
